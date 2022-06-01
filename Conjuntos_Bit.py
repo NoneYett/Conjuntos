@@ -40,8 +40,9 @@ def classifica(b, elem):#Como toda a relacao dos bits ligados estao na lista b, 
                 aux[1] = False
 
             #transitiva
-            if(b[i][j] and b[j][i] and not b[i][i]):
-                aux[2] = False
+            for k in range(elem):
+                if(b[i][j] and b[j][k] and not b[i][k]):
+                    aux[2] = False
 
             #Irreflexiva
             if(i == j and b[i][j]):
@@ -118,5 +119,5 @@ def arquiva_conjunto(elem): #elem = quantidade de elementos
         cria_relacoes(r,b,elem,arq) #cada r diferente representa uma relacao diferente, no range do numero de elementos ao quadrado
     arq.close()
 
-arquiva_conjunto(5) #Funcao chamada para cria e classificar relacao de 5 elementos
+arquiva_conjunto(3) #Funcao chamada para cria e classificar relacao de 5 elementos
                     #so eh necessario chamar a funcao passando a quantidade de elementos
