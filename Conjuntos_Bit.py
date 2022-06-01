@@ -119,5 +119,5 @@ def arquiva_conjunto(elem): #elem = quantidade de elementos
         cria_relacoes(r,b,elem,arq) #cada r diferente representa uma relacao diferente, no range do numero de elementos ao quadrado
     arq.close()
 
-arquiva_conjunto(3) #Funcao chamada para cria e classificar relacao de 5 elementos
+arquiva_conjunto(5) #Funcao chamada para cria e classificar relacao de 5 elementos
                     #so eh necessario chamar a funcao passando a quantidade de elementos
